@@ -29,6 +29,7 @@ let const
 // console.log(num / 10)
 // console.log(num)
 
+/*
 let num2 = num + 10
 console.log(num, num2)
 num = num2 - num
@@ -37,3 +38,7 @@ console.log(num, num2)
 
 let num3 = (num + 10 * 2) / 3 - 1
 console.log(num3)
+*/
+
+const fullName = firstName + ' Rychkov'
+console.log(fullName)
