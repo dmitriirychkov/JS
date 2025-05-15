@@ -40,5 +40,6 @@ let num3 = (num + 10 * 2) / 3 - 1
 console.log(num3)
 */
 
-const fullName = firstName + ' Rychkov'
+// const fullName = firstName + ' Rychkov'
+const fullName = firstName + ' ' + 'Rychkov'
 console.log(fullName)
