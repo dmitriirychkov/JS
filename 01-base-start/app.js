@@ -1,6 +1,6 @@
-let num = 37
-let firstName = 'Dmitrii'
-const isProgrammer = true 
+let num = 37 // number
+let firstName = 'Dmitrii' // string
+const isProgrammer = true // boolean 
 
 /* Can Do
 let $ = 'test'
@@ -23,4 +23,7 @@ let const
 // firstName = 'Tomyshev'
 // isProgrammer = false // error because of const
 
-console.log(firstName)
+console.log(num + 10)
+console.log(num - 10)
+console.log(num * 10)
+console.log(num / 10)
