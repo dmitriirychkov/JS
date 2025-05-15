@@ -23,7 +23,12 @@ let const
 // firstName = 'Tomyshev'
 // isProgrammer = false // error because of const
 
-console.log(num + 10)
-console.log(num - 10)
-console.log(num * 10)
-console.log(num / 10)
+// console.log(num + 10)
+// console.log(num - 10)
+// console.log(num * 10)
+// console.log(num / 10)
+// console.log(num)
+
+let num2 = num + 10
+console.log(num, num2)
+
