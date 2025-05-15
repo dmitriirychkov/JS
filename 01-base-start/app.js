@@ -31,4 +31,5 @@ let const
 
 let num2 = num + 10
 console.log(num, num2)
-
+num = num2 - num
+console.log(num, num2)
