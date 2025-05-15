@@ -14,7 +14,11 @@ let myNum = 37 // good
 let num42 = 10
 */
 
-// Restricted
+/* Restricted
+let 42num = '11'
+let my-num = 1
+let const
+*/
 
 // firstName = 'Tomyshev'
 // isProgrammer = false // error because of const
