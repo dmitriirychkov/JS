@@ -22,3 +22,5 @@ let const
 
 // firstName = 'Tomyshev'
 // isProgrammer = false // error because of const
+
+alert(firstName)
