@@ -34,3 +34,6 @@ console.log(num, num2)
 num = num2 - num
 num2 = num2 + 1
 console.log(num, num2)
+
+let num3 = num + 10 * 2 / 3 - 1
+console.log(num3)
