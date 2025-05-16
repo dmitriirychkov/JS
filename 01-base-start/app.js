@@ -41,5 +41,8 @@ console.log(num3)
 */
 
 // const fullName = firstName + ' Rychkov'
-const fullName = firstName + '\n' + 'Rychkov'
-console.log(fullName)
+// const fullName = firstName + '\n' + 'Rychkov'
+// console.log(fullName)
+
+const resultElement = document.getElementById('result')
+console.log(resultElement.textContent)
