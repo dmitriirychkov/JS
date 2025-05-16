@@ -46,3 +46,4 @@ console.log(num3)
 
 const resultElement = document.getElementById('result')
 console.log(resultElement.textContent)
+resultElement.textContent = (42 - 2) / num
