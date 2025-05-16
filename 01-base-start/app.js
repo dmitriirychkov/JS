@@ -51,6 +51,6 @@ const input2 = document.getElementById('input2')
 // console.log(resultElement.textContent)
 // resultElement.textContent = (42 - 2) / num
 
-const sum = input1.value + input2.value
+const sum = Number(input1.value) + Number(input2.value)
 resultElement.textContent = sum
 console.log(typeof sum)
