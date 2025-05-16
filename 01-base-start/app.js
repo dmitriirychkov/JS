@@ -70,12 +70,19 @@ submitBtn.onclick = function () {
 
     if (action == '+') {
         const sum = Number(input1.value) + Number(input2.value)
+        if (sum < 0) {
+            resultElement.style.color = 'red'
+        } else {
+            resultElement.style.color = 'green'    
+        }
         resultElement.textContent = sum
-    }
-
-    if (action == '-') {
+    } else if (action == '-') {
         const sum = Number(input1.value) - Number(input2.value)
+        if (sum < 0) {
+            resultElement.style.color = 'red'
+        } else {
+            resultElement.style.color = 'green'    
+        }
         resultElement.textContent = sum
     }
-    
 }
