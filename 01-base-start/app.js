@@ -53,3 +53,4 @@ const input2 = document.getElementById('input2')
 
 const sum = input1.value + input2.value
 resultElement.textContent = sum
+console.log(typeof sum)
