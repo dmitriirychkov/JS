@@ -45,5 +45,9 @@ console.log(num3)
 // console.log(fullName)
 
 const resultElement = document.getElementById('result')
-console.log(resultElement.textContent)
-resultElement.textContent = (42 - 2) / num
+const input1 = document.getElementById('input1')
+const input2 = document.getElementById('input2')
+
+console.log(input2.value)
+// console.log(resultElement.textContent)
+// resultElement.textContent = (42 - 2) / num
