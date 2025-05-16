@@ -15,4 +15,9 @@ let c = 32
 
 // c = 4 ** 2
 
-console.log(c)
+// =============== Data Types
+const age = 29 // number
+const name = 'Dmitrii' // string
+const isProgrammer = true // boollean 
+let x // undefined 
+console.log(typeof name)
