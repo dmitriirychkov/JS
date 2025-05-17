@@ -9,3 +9,4 @@ console.log(array[1])
 console.log(array[array.length - 1]) // array[6 -1]
 array[0] = 'Hello!'
 console.log(array)
+array[array.length] = 'becon'
