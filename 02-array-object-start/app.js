@@ -18,5 +18,5 @@ const listElement = document.getElementById('list')
 // console.log(inputElement.value)
 
 createBtn.onclick = function () {
-    
+    listElement.innerHTML = inputElement.value
 }
