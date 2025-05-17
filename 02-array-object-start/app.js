@@ -33,4 +33,5 @@ if (inputElement.value.length === 0) {
                 </span>
             </li>
             `)
+    inputElement.value = ''
 }
