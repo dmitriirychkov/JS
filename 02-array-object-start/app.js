@@ -17,6 +17,25 @@ const listElement = document.getElementById('list')
 
 // console.log(inputElement.value)
 
+const notes = ['записать блок про массивы', 'рассказать теорию объектов']
+
+function render() {
+        listElement.insertAdjacentHTML('beforeend', `
+            <li
+                class="list-group-item d-flex justify-content-between align-items-center"
+            >
+                <span>${notes[0]}</span>
+                <span>
+                <span class="btn btn-small btn-success">&check;</span>
+                <span class="btn btn-small btn-danger">&times;</span>
+                </span>
+            </li>
+            `
+            )
+}
+
+render()
+
 createBtn.onclick = function () {
 if (inputElement.value.length === 0) {
     return
@@ -32,6 +51,8 @@ if (inputElement.value.length === 0) {
                 <span class="btn btn-small btn-danger">&times;</span>
                 </span>
             </li>
-            `)
+            `
+            )
     inputElement.value = ''
 }
+
