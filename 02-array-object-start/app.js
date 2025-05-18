@@ -20,32 +20,8 @@ const listElement = document.getElementById('list')
 const notes = ['записать блок про массивы', 'рассказать теорию объектов']
 
 function render() {
-        listElement.insertAdjacentHTML('beforeend', `
-            <li
-                class="list-group-item d-flex justify-content-between align-items-center"
-            >
-                <span>${notes[0]}</span>
-                <span>
-                <span class="btn btn-small btn-success">&check;</span>
-                <span class="btn btn-small btn-danger">&times;</span>
-                </span>
-            </li>
-            `
-            )
-}
-function render() {
-        listElement.insertAdjacentHTML('beforeend', `
-            <li
-                class="list-group-item d-flex justify-content-between align-items-center"
-            >
-                <span>${notes[1]}</span>
-                <span>
-                <span class="btn btn-small btn-success">&check;</span>
-                <span class="btn btn-small btn-danger">&times;</span>
-                </span>
-            </li>
-            `
-            )
+        listElement.insertAdjacentHTML('beforeend', getNotTemplate(notes[0]))
+        listElement.insertAdjacentHTML('beforeend', getNotTemplate(notes[1]))
 }
 
 render()
@@ -55,18 +31,24 @@ if (inputElement.value.length === 0) {
     return
 }
     // listElement.innerHTML = 
-    listElement.insertAdjacentHTML('beforeend', `
+    listElement.insertAdjacentHTML(
+            'beforeend', 
+            getNotTemplate(inputElement.value)
+            )
+    inputElement.value = ''
+}
+
+function getNotTemplate(titile) {
+    return `
             <li
                 class="list-group-item d-flex justify-content-between align-items-center"
             >
-                <span>${inputElement.value}</span>
+                <span>${title}</span>
                 <span>
                 <span class="btn btn-small btn-success">&check;</span>
                 <span class="btn btn-small btn-danger">&times;</span>
                 </span>
             </li>
             `
-            )
-    inputElement.value = ''
 }
 
