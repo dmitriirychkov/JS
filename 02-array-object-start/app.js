@@ -91,12 +91,9 @@ const notes = [
  ]
 
  function render() {
-        // for (let i = 0; i < notes.length; i++) {
-        //    listElement.insertAdjacentHTML('beforeend', getNotTemplate(notes[i]))
-        // }
-
-        for (let [note, index] of notes.entries()) {
-            listElement.insertAdjacentHTML('beforeend', getNotTemplate(note))
+        listElement.innerHTML = ''
+        for (let i = 0; i < notes.length; i++) {
+            listElement.insertAdjacentHTML('beforeend', getNotTemplate(notes[i], i))
         }
 }
 
@@ -109,19 +106,20 @@ if (inputElement.value.length === 0) {
     const newNote = {
         title: inputElement.value,
         completed: false,
-    } 
-    listElement.insertAdjacentHTML('beforeend', getNotTemplate(newNote))
+    }
+    notes.push(newNote)
+    render() 
     inputElement.value = ''
 }
 
-function getNotTemplate(note) {
+function getNotTemplate(note, index) {
     return `
             <li
                 class="list-group-item d-flex justify-content-between align-items-center"
             >
                 <span class="${note.completed ? 'text-decoration-line-through' : ''}">${note.title}</span>
                 <span>
-                <span class="btn btn-small btn-${note.completed ? 'warning' : 'success'}">&check;</span>
+                <span class="btn btn-small btn-${note.completed ? 'warning' : 'success'}" data-index="${index}">&check;</span>
                 <span class="btn btn-small btn-danger">&times;</span>
                 </span>
             </li>
