@@ -7,4 +7,7 @@ const names = ['Дмитрий', 'Евгения', 'Ирина', 'Роман']
 // const name = names.pop()
 // console.log('Names: ', names, name)
 
-console.log(names.reverse())
+// console.log(names.reverse())
+const reversed = names.toReversed()
+console.log(reversed)
+console.log(names)
