@@ -1,5 +1,5 @@
 const names = ['Дмитрий', 'Евгения', 'Ирина', 'Роман']
 
-names.push('Олег')
+names.unshift('Олег')
 
 console.log('Names: ', names)
