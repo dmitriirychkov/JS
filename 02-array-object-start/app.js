@@ -43,7 +43,7 @@ if (inputElement.value.length === 0) {
     inputElement.value = ''
 }
 
-function getNotTemplate(titile) {
+function getNotTemplate(title) {
     return `
             <li
                 class="list-group-item d-flex justify-content-between align-items-center"
@@ -68,7 +68,7 @@ const person = {
     hasGirlfriend: true,
     languages: ['ru', 'en'],
     getFullName: function() {
-        console.log(person.firstName)
+        console.log(person.firstName + ' ' + person.LastName)
     }
 }
 // console.log(typeof person)
