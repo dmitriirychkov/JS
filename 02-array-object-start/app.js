@@ -82,7 +82,7 @@ person.getFullName()
 const notes = [
     {
     title: 'записать блок про массивы',
-    completed: true,
+    completed: false,
     },
     {
     title: 'рассказать теорию объектов',
@@ -121,7 +121,7 @@ function getNotTemplate(note) {
             >
                 <span class="${note.completed ? 'text-decoration-line-through' : ''}">${note.title}</span>
                 <span>
-                <span class="btn btn-small btn-success">&check;</span>
+                <span class="btn btn-small btn-${note.completed ? 'warning' : 'success'}">&check;</span>
                 <span class="btn btn-small btn-danger">&times;</span>
                 </span>
             </li>
