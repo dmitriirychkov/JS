@@ -120,7 +120,7 @@ listElement.onclick = function(event) {
         if (type === 'toggle') {
             notes[index].completed = !notes[index].completed
         } else if (type === 'remove') {
-            console.log('remove', index)
+            notes.splice(index, 1)
         }
 
         render()
@@ -140,6 +140,5 @@ function getNotTemplate(note, index) {
             </li>
             `
 } 
-
 
 
