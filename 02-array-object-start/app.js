@@ -119,6 +119,8 @@ listElement.onclick = function(event) {
 
         if (type === 'toggle') {
             console.log('toggle', index)
+        } else if (type === 'remove') {
+            console.log('remove', index)
         }
     }
 }
