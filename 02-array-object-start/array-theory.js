@@ -1,5 +1,9 @@
 const names = ['Дмитрий', 'Евгения', 'Ирина', 'Роман']
 
-names.unshift('Олег')
+// names.push('Олег')
+// names.unshift('Олег')
 
-console.log('Names: ', names)
+// const firstName = names.shift()
+const firstName = names.pop()
+
+console.log('Names: ', names, firstName)
