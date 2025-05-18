@@ -92,6 +92,9 @@ const notes = [
 
  function render() {
         listElement.innerHTML = ''
+        if (notes.length === 0) {
+            listElement.innerHTML = '<p>Нет элементов</p>'
+        }
         for (let i = 0; i < notes.length; i++) {
             listElement.insertAdjacentHTML('beforeend', getNotTemplate(notes[i], i))
         }
