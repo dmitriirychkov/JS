@@ -71,5 +71,11 @@ const person = {
         console.log(person.firstName + ' ' + person.LastName)
     }
 }
-// console.log(typeof person)
+
+console.log(person.year)
+console.log(person['languages'])
+const key = 'hasGirlfriend'
+console.log(person[key])
+person.hasGirlfriend = false
+person.getFullName()
 
