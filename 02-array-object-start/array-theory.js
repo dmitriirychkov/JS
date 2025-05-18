@@ -10,5 +10,9 @@ const names = ['Дмитрий', 'Евгения', 'Ирина', 'Роман']
 // console.log(names.reverse())
 // const reversed = names.toReversed()
 const letters = ['e', 'c', 'd', 'b', 'a']
-console.log(letters.sort())
+console.log(
+    letters.sort(function (a, b) {
+        return a -b
+    })
+)
 console.log(letters)
