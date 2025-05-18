@@ -112,6 +112,10 @@ if (inputElement.value.length === 0) {
     inputElement.value = ''
 }
 
+listElement.onclick = function(event) {
+    console.log(event.target)
+}
+
 function getNotTemplate(note, index) {
     return `
             <li
