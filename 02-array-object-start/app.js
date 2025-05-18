@@ -95,7 +95,7 @@ const notes = [
         //    listElement.insertAdjacentHTML('beforeend', getNotTemplate(notes[i]))
         // }
 
-        for (let note of notes) {
+        for (let [note, index] of notes.entries()) {
             listElement.insertAdjacentHTML('beforeend', getNotTemplate(note))
         }
 }
