@@ -20,8 +20,13 @@ const listElement = document.getElementById('list')
 const notes = ['записать блок про массивы', 'рассказать теорию объектов']
 
 function render() {
-        listElement.insertAdjacentHTML('beforeend', getNotTemplate(notes[0]))
-        listElement.insertAdjacentHTML('beforeend', getNotTemplate(notes[1]))
+        // for (let i = 0; i < notes.length; i++) {
+        //    listElement.insertAdjacentHTML('beforeend', getNotTemplate(notes[i]))
+        // }
+
+        for (let note of notes) {
+            listElement.insertAdjacentHTML('beforeend', getNotTemplate(note))
+        }
 }
 
 render()
