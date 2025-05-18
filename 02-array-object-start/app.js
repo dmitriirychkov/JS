@@ -106,11 +106,11 @@ createBtn.onclick = function () {
 if (inputElement.value.length === 0) {
     return
 }
-    // listElement.innerHTML = 
-    listElement.insertAdjacentHTML(
-            'beforeend', 
-            getNotTemplate(inputElement.value)
-            )
+    const newNote = {
+        title: inputElement.value,
+        completed: false,
+    } 
+    listElement.insertAdjacentHTML('beforeend', getNotTemplate(newNote))
     inputElement.value = ''
 }
 
