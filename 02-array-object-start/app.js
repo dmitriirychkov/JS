@@ -118,10 +118,12 @@ listElement.onclick = function(event) {
         const type = event.target.dataset.type
 
         if (type === 'toggle') {
-            console.log('toggle', index)
+            notes[index].completed = !notes[index].completed
         } else if (type === 'remove') {
             console.log('remove', index)
         }
+
+        render()
     }
 }
 
@@ -138,3 +140,6 @@ function getNotTemplate(note, index) {
             </li>
             `
 } 
+
+
+
