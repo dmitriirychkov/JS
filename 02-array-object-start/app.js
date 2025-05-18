@@ -82,7 +82,7 @@ person.getFullName()
 const notes = [
     {
     title: 'записать блок про массивы',
-    completed: false,
+    completed: true,
     },
     {
     title: 'рассказать теорию объектов',
