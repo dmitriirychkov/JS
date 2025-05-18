@@ -57,3 +57,19 @@ function getNotTemplate(titile) {
             `
 }
 
+
+/*
+Object Theory
+*/
+const person = {
+    firstName: 'Dmitrii',
+    LastName: 'Rychkov',
+    year: 1988,
+    hasGirlfriend: true,
+    languages: ['ru', 'en'],
+    getFullName: function() {
+        console.log(person.firstName)
+    }
+}
+// console.log(typeof person)
+
