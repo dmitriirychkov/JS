@@ -3,7 +3,7 @@ const names = ['Дмитрий', 'Евгения', 'Ирина', 'Роман']
 // names.push('Олег')
 // names.unshift('Олег')
 
-// const firstName = names.shift()
-const firstName = names.pop()
+// const name = names.shift()
+const name = names.pop()
 
-console.log('Names: ', names, firstName)
+console.log('Names: ', names, name)
