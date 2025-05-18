@@ -12,7 +12,7 @@ const names = ['Дмитрий', 'Евгения', 'Ирина', 'Роман']
 const letters = ['e', 'c', 'd', 'b', 'a']
 console.log(
     letters.sort(function (a, b) {
-        return a - b
+        return a.charCodeAt(0) - b.charCodeAt(0)
     })
 )
 console.log(letters)
