@@ -17,10 +17,10 @@ const names = ['Дмитрий', 'Евгения', 'Ирина', 'Роман']
 // console.log(names.toSpliced(0,2))
 // console.log(names)
 
-const greateWoman = 'Ирина'
-const index = names.indexOf(greateWoman)
+// const greateWoman = 'Ирина'
+// const index = names.indexOf(greateWoman)
 // console.log(index)
-const newNames = names.with(index, 'Ирина моя')
+// const newNames = names.with(index, 'Ирина моя')
 // names[index] = 'Ирина моя'
 // console.log(names[index])
 // console.log(names)
@@ -36,4 +36,22 @@ const capitalNames = names.map(function(name, index) {
 console.log(capitalNames)
 */
 
-console.log(names.indexOf('Роман') !== -1)
+// console.log(names.indexOf('Роман') !== -1)
+
+const people = [
+    {name: 'Дмитрий', budget: 4200}, 
+    {name: 'Евгения', budget: 15100}, 
+    {name: 'Ирина', budget: 300},
+    {name: 'Роман', budget: 7520}
+]
+
+// console.log(people.indexOf({ name: 'Роман', budget: 7520}))
+let findedPerson 
+
+for(let person of people) {
+    if (person.budget === 7520) {
+        findedPerson = person
+    }
+} 
+
+console.log(findedPerson)
