@@ -30,5 +30,6 @@ const capitalNames = names.map(function(name, index) {
     if (index === 2) {
         return 'Ирина моя'
     }
+    return name
 })
 console.log(capitalNames)
