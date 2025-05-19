@@ -95,7 +95,7 @@ const reversed = string
     .toReversed()
     .join('!')
     .split('')
-    .filter((c) => c == '!')
+    .filter((c) => c !== '!')
     .join('')
 
 console.log(reversed)
