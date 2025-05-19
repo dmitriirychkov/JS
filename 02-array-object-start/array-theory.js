@@ -19,9 +19,15 @@ const names = ['Дмитрий', 'Евгения', 'Ирина', 'Роман']
 
 const greateWoman = 'Ирина'
 const index = names.indexOf(greateWoman)
-console.log(index)
+// console.log(index)
 const newNames = names.with(index, 'Ирина моя')
 // names[index] = 'Ирина моя'
 // console.log(names[index])
+// console.log(names)
+// console.log(newNames)
+
+names.map(function(name) {
+    const newName = name + '!'
+    // return newName
+})
 console.log(names)
-console.log(newNames)
