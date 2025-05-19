@@ -26,8 +26,9 @@ const newNames = names.with(index, 'Ирина моя')
 // console.log(names)
 // console.log(newNames)
 
-names.map(function(name) {
+const capitalNames = names.map(function(name) {
     const newName = name + '!'
+    return newName
     // return newName
 })
-console.log(names)
+console.log(capitalNames)
