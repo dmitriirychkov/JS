@@ -64,4 +64,4 @@ const finded = people.findIndex(function(person) {
     return person.budget === 7520
 })
 
-console.log(people[finded])
+console.log(people.with(finded, 42))
