@@ -13,5 +13,6 @@ const names = ['Дмитрий', 'Евгения', 'Ирина', 'Роман']
 // console.log(letters.toSorted())
 // console.log(letters)
 
-console.log(names.splice(2, 1))
+// console.log(names.splice(2, 1))
+console.log(names.toSpliced(0,2))
 console.log(names)
