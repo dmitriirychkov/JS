@@ -77,6 +77,7 @@ filtered.forEach(function(p) {
 })
 */
 
+/*
 const byBudget = (p) => p.budget > 5000
 const pickBudget = (p) => p.budget
 
@@ -86,3 +87,9 @@ const sumBudget = people
     .reduce((acc, p) => acc + p, 0)
 
 console.log(sumBudget)
+*/
+
+const string = 'Привет, как дела?'
+const reverse = string.split('')
+
+console.log(reverse)
