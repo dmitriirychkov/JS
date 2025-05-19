@@ -20,6 +20,7 @@ const names = ['Дмитрий', 'Евгения', 'Ирина', 'Роман']
 const greateWoman = 'Ирина'
 const index = names.indexOf(greateWoman)
 console.log(index)
-names[index] = 'Ирина моя'
-console.log(names[index])
+const newNames = names.with(index, 'Ирина моя')
+// names[index] = 'Ирина моя'
+// console.log(names[index])
 console.log(names)
