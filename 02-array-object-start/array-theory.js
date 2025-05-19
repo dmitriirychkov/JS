@@ -54,11 +54,13 @@ const people = [
 //    }
 // } 
 
-const findedPerson = people.find(function(person) {
-    return person.budget === 7520
+// const findedPerson = people.find(function(person) {
+    // return person.budget === 7520
     // if (person.budget === 7520) {
     //    return true
     // }
-})
+// })
 
-console.log(findedPerson)
+const finded = people.find((p) => p.budget === 7520)
+
+console.log(finded)
