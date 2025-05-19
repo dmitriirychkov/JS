@@ -72,7 +72,7 @@ const filtered = people.filter(function(p) {
 })
 console.log(filtered)
 filtered.forEach(function(p) {
-    sumBudget = sumBudget + p.budget
+    sumBudget += p.budget
 })
 
 console.log(sumBudget)
