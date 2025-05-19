@@ -36,4 +36,4 @@ const capitalNames = names.map(function(name, index) {
 console.log(capitalNames)
 */
 
-console.log(names.includes('Роман'))
+console.log(names.indexOf('Роман'))
