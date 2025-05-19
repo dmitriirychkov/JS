@@ -26,6 +26,7 @@ const newNames = names.with(index, 'Ирина моя')
 // console.log(names)
 // console.log(newNames)
 
+/*
 const capitalNames = names.map(function(name, index) {
     if (index === 2) {
         return 'Ирина моя'
@@ -33,3 +34,6 @@ const capitalNames = names.map(function(name, index) {
     return name
 })
 console.log(capitalNames)
+*/
+
+console.log(names.includes('Роман'))
