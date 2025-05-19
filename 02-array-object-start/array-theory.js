@@ -22,3 +22,4 @@ const index = names.indexOf(greateWoman)
 console.log(index)
 names[index] = 'Ирина моя'
 console.log(names[index])
+console.log(names)
