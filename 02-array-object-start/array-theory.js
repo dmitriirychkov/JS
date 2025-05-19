@@ -24,3 +24,4 @@ const newNames = names.with(index, 'Ирина моя')
 // names[index] = 'Ирина моя'
 // console.log(names[index])
 console.log(names)
+console.log(newNames)
