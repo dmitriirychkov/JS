@@ -90,6 +90,12 @@ console.log(sumBudget)
 */
 
 const string = 'Привет, как дела?'
-const reverse = string.split('').toReversed().join('')
+const reversed = string
+    .split('')
+    .toReversed()
+    .join('!')
+    .split('')
+    .filter((c) => c == '!')
+    .join('')
 
-console.log(reverse)
+console.log(reversed)
