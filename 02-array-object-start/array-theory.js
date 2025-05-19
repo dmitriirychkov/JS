@@ -66,8 +66,15 @@ const people = [
 
 // console.log(people.with(finded, 42))
 
+let sumBudget = 0
 const filtered = people.filter(function(p) {
     return p.budget > 5000
 })
-
 console.log(filtered)
+filtered.forEach(function(p) {
+    sumBudget = sumBudget + p.budget
+})
+
+console.log(sumBudget)
+
+// const sumBudget = people
