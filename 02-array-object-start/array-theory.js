@@ -17,7 +17,7 @@ const names = ['Дмитрий', 'Евгения', 'Ирина', 'Роман']
 // console.log(names.toSpliced(0,2))
 // console.log(names)
 
-const greateWoman = 'Ирина'
+const greateWoman = 'Ирина!!!'
 const index = names.indexOf(greateWoman)
 console.log(index)
 console.log(names[index])
