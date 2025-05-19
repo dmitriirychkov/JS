@@ -46,12 +46,18 @@ const people = [
 ]
 
 // console.log(people.indexOf({ name: 'Роман', budget: 7520}))
-let findedPerson 
+// let findedPerson 
 
-for(let person of people) {
+// for(let person of people) {
+//    if (person.budget === 7520) {
+//        findedPerson = person
+//    }
+// } 
+
+const findedPerson = people.find(function(person) {
     if (person.budget === 7520) {
-        findedPerson = person
+        return true
     }
-} 
+})
 
 console.log(findedPerson)
