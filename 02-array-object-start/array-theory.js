@@ -26,7 +26,9 @@ const newNames = names.with(index, 'Ирина моя')
 // console.log(names)
 // console.log(newNames)
 
-const capitalNames = names.map(function(name) {
-    return name.toLowerCase()
+const capitalNames = names.map(function(name, index) {
+    if (index === 2) {
+        return 'Ирина моя'
+    }
 })
 console.log(capitalNames)
