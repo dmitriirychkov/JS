@@ -60,8 +60,14 @@ const people = [
 //    return person.budget === 7520
 // })
 
-const finded = people.findIndex(function(person) {
-    return person.budget === 7520
+// const finded = people.findIndex(function(person) {
+//    return person.budget === 7520
+// })
+
+// console.log(people.with(finded, 42))
+
+const filtered = people.filter(function(p) {
+    return p.budget > 5000
 })
 
-console.log(people.with(finded, 42))
+console.log(filtered)
