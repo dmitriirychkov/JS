@@ -27,7 +27,6 @@ const newNames = names.with(index, 'Ирина моя')
 // console.log(newNames)
 
 const capitalNames = names.map(function(name) {
-    const newName = name + '!'
-    return newName
+    return name.toUpperCase()
 })
 console.log(capitalNames)
