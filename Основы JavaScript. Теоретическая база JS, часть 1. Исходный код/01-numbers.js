@@ -28,4 +28,5 @@ const strFloat = '42.42'
 // console.log(Number.parseFloat(strFloat))
 // console.log(+strInt, +strFloat)
 
-console.log(parseFloat((0.1 + 0.2).toFixed(10)))
+const fixed = (0.1 + 0.2).toFixed(10)
+console.log(parseFloat(fixed))
