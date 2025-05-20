@@ -32,11 +32,21 @@ const fixed = (0.1 + 0.2).toFixed(10)
 console.log(parseFloat(fixed))
 
 // BigInt
-console.log(BigInt(Number.MAX_SAFE_INTEGER) + 9532232323n)
-console.log(-42n)
+// console.log(BigInt(Number.MAX_SAFE_INTEGER) + 9532232323n)
+// console.log(-42n)
 // console.log(42.42n) // error
 // console.log(10n -4) // error
-console.log(parseInt(10n) - 4)
-console.log(10n - BigInt(4))
-console.log(5n / 2n)
-console.log(5 / 2)
+// console.log(parseInt(10n) - 4)
+// console.log(10n - BigInt(4))
+// console.log(5n / 2n)
+// console.log(5 / 2)
+
+// Math
+console.log(Math.E)
+console.log(Math.PI)
+
+console.log(Math.sqrt(25))
+console.log(Math.pow(2, 3))
+console.log(Math.abs(-42))
+console.log(Math.max(2, 5, 42, 199, 0))
+console.log(Math.min(2, 5, 42, 199, 0))
