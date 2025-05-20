@@ -30,3 +30,6 @@ const strFloat = '42.42'
 
 const fixed = (0.1 + 0.2).toFixed(10)
 console.log(parseFloat(fixed))
+
+// BigInt
+console.log(BigInt(Number.MAX_SAFE_INTEGER) + 9532232323n)
