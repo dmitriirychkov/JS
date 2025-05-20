@@ -52,8 +52,16 @@ const myNum = 4.9
 // console.log(Math.abs(-42))
 // console.log(Math.max(2, 5, 42, 199, 0))
 // console.log(Math.min(2, 5, 42, 199, 0))
-console.log(Math.floor(myNum))
-console.log(Math.ceil(myNum))
-console.log(Math.round(myNum))
-console.log(Math.trunc(myNum))
-console.log(Math.random())
+// console.log(Math.floor(myNum))
+// console.log(Math.ceil(myNum))
+// console.log(Math.round(myNum))
+// console.log(Math.trunc(myNum))
+// console.log(Math.random())
+
+function getRandomNumber(min, max) {
+    return Math.floor(Math.random() * (max - min +1) + min)
+}
+
+const num1 = getRandomNumber(10, 100)
+console.log(num1)
+
