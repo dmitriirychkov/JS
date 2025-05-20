@@ -33,3 +33,10 @@ console.log(parseFloat(fixed))
 
 // BigInt
 console.log(BigInt(Number.MAX_SAFE_INTEGER) + 9532232323n)
+console.log(-42n)
+// console.log(42.42n) // error
+// console.log(10n -4) // error
+console.log(parseInt(10n) - 4)
+console.log(10n - BigInt(4))
+console.log(5n / 2n)
+console.log(5 / 2)
