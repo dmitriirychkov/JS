@@ -3,6 +3,7 @@ const float = 42.42 // float
 const pow = 10e3
 const big = 1_000_000_000
 
+/*
 console.log(Number.MAX_SAFE_INTEGER)
 console.log(Math.pow(2, 53) -1)
 console.log(Number.MIN_SAFE_INTEGER)
@@ -16,3 +17,10 @@ console.log(23 / undefined)
 const weird = 23 / undefined
 console.log(Number.isNaN(weird))
 console.log(Number.isNaN(12))
+*/
+
+const strInt = '42'
+const strFloat = '42.42'
+
+console.log(Number(strInt))
+console.log(Number(strFloat))
