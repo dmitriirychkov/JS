@@ -13,3 +13,6 @@ console.log(Number.NEGATIVE_INFINITY)
 console.log(1/0)
 console.log(Number.isFinite(1/0))
 console.log(23 / undefined)
+const weird = 23 / undefined
+console.log(Number.isNaN(weird))
+console.log(Number.isNaN(12))
