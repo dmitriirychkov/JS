@@ -24,5 +24,6 @@ const strFloat = '42.42'
 
 // console.log(Number(strInt))
 // console.log(Number(strFloat))
-console.log(Number.parseInt(strInt))
-console.log(Number.parseFloat(strFloat))
+// console.log(Number.parseInt(strInt))
+// console.log(Number.parseFloat(strFloat))
+console.log(+strInt, +strFloat)
