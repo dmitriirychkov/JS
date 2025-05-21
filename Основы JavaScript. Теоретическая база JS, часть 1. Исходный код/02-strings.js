@@ -1,6 +1,8 @@
 const name = 'Dmitrii'
 const age = '37'
 
-const output = `any string`
+const output = `any 
+test
+string`
 
 console.log(output)
