@@ -1,8 +1,7 @@
 const name = 'Dmitrii'
 const age = '37'
 
-const output = `any 
-test
-string`
+const old = 'Hello my name is ' + name
+const output = `any string`
 
-console.log(output)
+console.log(old)
