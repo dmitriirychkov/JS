@@ -10,8 +10,9 @@ const greet2 = function (name) {
 greet('Dmitrii')
 greet2('Dmitrii')
 
-console.dir(greet.toString())
+// console.dir(greet)
 
+setTimeout(greet, 1500)
 
 
 
