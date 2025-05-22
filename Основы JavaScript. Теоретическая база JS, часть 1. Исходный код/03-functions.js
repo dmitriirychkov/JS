@@ -33,12 +33,11 @@ function greet(name) {
     console.log('Hello - ', name)
 }
 
-const arrow = (name) => {
-    console.log('Hello - ', name)
+const arrow = (name, age) => {
+    console.log('Hello - ', name, age)
 }
 
-arrow('Dmitrii')
-
+arrow('Dmitrii', 77)
 
 
 
