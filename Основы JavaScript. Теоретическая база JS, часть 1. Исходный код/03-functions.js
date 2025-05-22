@@ -18,7 +18,13 @@ setTimeout(function() {
 }, 1500)
 */
 
-setInterval(function() {
+let counter = 0
+const interval = setInterval(function() {
+    if  (counter === 5){
+        clearInterval(interval)
+    } else {
+        ++counter
+    }
     console.log(Math.random())
 }, 2000)
 
