@@ -10,7 +10,8 @@ const greet2 = function (name) {
 greet('Dmitrii')
 greet2('Dmitrii')
 
-console.dir(greet)
+console.dir(greet.toString())
+
 
 
 
