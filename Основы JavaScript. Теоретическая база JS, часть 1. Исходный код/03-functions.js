@@ -54,10 +54,14 @@ const sum = (a = 40, b = a / 2) => a + b
 // console.log(sum())
 
 function sumAll(...numbers) {
-    console.log(numbers)
+    let res = 0 
+    for (let num of numbers) {
+        res += num
+    }
+    return res
 }
 
-console.log(sumAll(1, 2, 3, 4, 5, 6))
+console.log(sumAll(1, 2, 3, 4, 5, 6, 7))
 
 
 
