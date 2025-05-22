@@ -20,12 +20,12 @@ setTimeout(function() {
 
 let counter = 0
 const interval = setInterval(function() {
-    if  (counter === 5){
-        clearInterval(interval)
-    } else {
+ //   if  (counter === 5){
+ //       clearInterval(interval)
+ //   } else {
        console.log(++counter)
-    }
-}, 1000)
+ //   }
+}, 10)
 
 
 
