@@ -13,7 +13,7 @@ greet2('Dmitrii')
 // console.dir(greet)
 
 setTimeout(function() {
-    console.log('Timeout')
+    greet('Dmitrii2')
 }, 1500)
 
 
