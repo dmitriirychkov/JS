@@ -48,10 +48,16 @@ const pow2 = (num, exp) => Math.pow(num, exp)
 console.log(pow2(2, 3))
 
 // ========== Default Parameters
-const sum = (a= 40, b = a / 2) => a + b 
+const sum = (a = 40, b = a / 2) => a + b 
 
-console.log(sum(40, 2))
-console.log(sum())
+// console.log(sum(40, 2))
+// console.log(sum())
+
+function sumAll(...numbers) {
+    console.log(numbers)
+}
+
+console.log(sumAll(1, 2, 3, 4, 5, 6))
 
 
 
