@@ -43,11 +43,9 @@ function pow(num, exp) {
     return Math.pow(num, exp)
 }
 
-const pow2 = (num, exp) => {
-    return Math.pow(num, exp)
-}
+const pow2 = (num, exp) => Math.pow(num, exp)
 
-arrow('Dmitrii', 77)
+console.log(pow2(2, 3))
 
 
 
