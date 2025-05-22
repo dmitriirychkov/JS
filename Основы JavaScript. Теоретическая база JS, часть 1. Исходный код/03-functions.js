@@ -1,5 +1,7 @@
 // Function Declaration 
-
+function greet(name) {
+    console.log('Hello - ', name)
+}
 // Function Expression
 const greet2 = function (name) {
     console.log('2 Hello - ', name)
@@ -8,9 +10,6 @@ const greet2 = function (name) {
 greet('Dmitrii')
 greet2('Dmitrii')
 
-
-function greet(name) {
-    console.log('Hello - ', name)
-}
+console.log(typeof greet)
 
 
