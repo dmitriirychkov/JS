@@ -64,5 +64,18 @@ function sumAll(...numbers) {
 
 console.log(sumAll(1, 2, 3, 4, 5, 6, 7))
 
+// Closures
+
+function createPerson(name) {
+    return function(lastname) {
+        console.log(name + ' ' + lastname)
+    }
+}
+
+const addLastName = createPerson('Dmitrii')
+addLastName('Rychkov')
+addLastName('Tomyshev')
+addLastName('Shirokovsky')
+
 
 
