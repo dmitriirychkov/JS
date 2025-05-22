@@ -23,10 +23,9 @@ const interval = setInterval(function() {
     if  (counter === 5){
         clearInterval(interval)
     } else {
-        ++counter
+       console.log(++counter)
     }
-    console.log(Math.random())
-}, 2000)
+}, 1000)
 
 
 
