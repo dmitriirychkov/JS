@@ -12,7 +12,10 @@ greet2('Dmitrii')
 
 // console.dir(greet)
 
-setTimeout(greet, 1500)
+setTimeout(function() {
+    console.log('Timeout')
+}, 1500)
+
 
 
 
