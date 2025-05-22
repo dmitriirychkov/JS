@@ -10,6 +10,7 @@ const greet2 = function (name) {
 greet('Dmitrii')
 greet2('Dmitrii')
 
-console.log(typeof greet)
+console.dir(greet)
+
 
 
