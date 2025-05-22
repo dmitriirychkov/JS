@@ -12,9 +12,15 @@ greet2('Dmitrii')
 
 // console.dir(greet)
 
+/*
 setTimeout(function() {
     greet('Dmitrii2')
 }, 1500)
+*/
+
+setInterval(function() {
+    console.log(1)
+}, 2000)
 
 
 
