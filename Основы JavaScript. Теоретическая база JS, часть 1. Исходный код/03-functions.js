@@ -39,6 +39,14 @@ const arrow = (name, age) => {
 
 const arrow2 = (name) => console.log('Hello -', name)
 
+function pow(num, exp) {
+    return Math.pow(num, exp)
+}
+
+const pow2 = (num, exp) => {
+    return Math.pow(num, exp)
+}
+
 arrow('Dmitrii', 77)
 
 
