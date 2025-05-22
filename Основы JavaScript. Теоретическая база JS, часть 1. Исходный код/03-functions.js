@@ -37,6 +37,8 @@ const arrow = (name, age) => {
     console.log('Hello - ', name, age)
 }
 
+const arrow2 = (name) => console.log('Hello -', name)
+
 arrow('Dmitrii', 77)
 
 
