@@ -5,4 +5,10 @@ const start = new Date(1000 * 60 * 60 * 24 * 365)
 
 const date = new Date(1988, 4, 3, 12, 42, 12)
 
-console.log(date)
+console.log(now.getFullYear())
+console.log(now.getMonth())
+console.log(now.getDate())
+console.log(now.getHours())
+console.log(now.getMinutes())
+console.log(now.getSeconds())
+console.log(now.getMilliseconds())
