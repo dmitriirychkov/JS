@@ -1,1 +1,2 @@
-console.log('test')
+const person = {}
+console.log(typeof null)
