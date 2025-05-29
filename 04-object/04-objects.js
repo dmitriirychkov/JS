@@ -21,6 +21,7 @@ const person = {
 }
 
 console.log(person.address)
+const addressKey = 'address'
 console.log(person['address'])
 console.log(person['complex key'])
 
