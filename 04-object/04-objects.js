@@ -7,7 +7,7 @@ const person = {
         city: 'Yekaterinburg',
         street: 'Parina'
     },
-    'complex key': 'complex',
+    'complex key': 'complex value',
     ['key_' + 21 * 2]: 'computed value',
     greet() {
         console.log('Greet from person', this)
@@ -22,5 +22,6 @@ const person = {
 
 console.log(person.address)
 console.log(person['address'])
+console.log(person['complex key'])
 
 
