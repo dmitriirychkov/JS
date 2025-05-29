@@ -8,8 +8,12 @@ const person = {
         street: 'Parina'
     },
     'complex key': 'complex',
-    ['key_' + 21 * 2]: 'computed value'
+    ['key_' + 21 * 2]: 'computed value',
+    greet() {
+        console.log('Greet from person')
+    }
 }
 
 console.log(person)
+person.greet()
 
