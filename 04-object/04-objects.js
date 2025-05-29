@@ -11,9 +11,12 @@ const person = {
     ['key_' + 21 * 2]: 'computed value',
     greet() {
         console.log('Greet from person')
+    },
+    arrow: () => {
+        console.log('Person Arrow')
     }
 }
 
 console.log(person)
-person.greet()
+person.arrow()
 
