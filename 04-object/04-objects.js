@@ -14,9 +14,13 @@ const person = {
     },
     arrow: () => {
         console.log('Person Arrow')
+    },
+    info() {
+        console.log('Person name', person.name)
     }
 }
 
 console.log(person)
 person.arrow()
+person.info()
 
