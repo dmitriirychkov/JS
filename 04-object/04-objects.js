@@ -8,7 +8,8 @@ const person = {
         street: 'Parina'
     },
     'complex key': 'complex',
-    [1 + 2]: 'computed value'
+    [new Date()]: 'computed value'
 }
 
 console.log(person)
+
