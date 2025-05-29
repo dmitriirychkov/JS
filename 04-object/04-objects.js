@@ -13,7 +13,7 @@ const person = {
         console.log('Greet from person', this)
     },
     arrow: () => {
-        console.log('Person Arrow')
+        console.log('Person Arrow', this)
     },
     info() {
         console.log('Person name', this.name)
@@ -21,6 +21,6 @@ const person = {
 }
 
 console.log(person)
-person.greet()
+person.arrow()
 
 
