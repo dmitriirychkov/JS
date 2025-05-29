@@ -16,6 +16,7 @@ const person = {
         console.log('Person Arrow')
     },
     info() {
+        console.log(this)
         console.log('Person name', this.name)
     }
 }
