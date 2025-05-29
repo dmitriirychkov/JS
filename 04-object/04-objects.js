@@ -20,7 +20,7 @@ const person = {
     }
 }
 
-console.log(person)
-person.arrow()
+console.log(person.address)
+console.log(person['address'])
 
 
