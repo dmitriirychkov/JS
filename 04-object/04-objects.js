@@ -40,8 +40,10 @@ console.log(person.languages)
 // const name = person.name
 // const languages = person.languages
 
-const {age, name, languages} = person
+const name = 'Petr'
 
-console.log(languages, age, name)
+const {age, name: firstName, languages} = person
+
+console.log(languages, age, firstName)
 
 
