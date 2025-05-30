@@ -26,3 +26,8 @@ console.log(person['address'])
 console.log(person['complex key'])
 
 
+person.age++
+
+console.log(person.age)
+
+
