@@ -28,13 +28,17 @@ console.log(person['complex key'])
 
 person.age++
 person.languages.push('de')
-
 console.log(person.languages)
 */
 
 // person.address = undefined
-delete person.address
+// delete person.address
+// console.log(person)
 
-console.log(person)
+const age = person.age
+const name = person.name
+const languages = person.languages
+
+console.log(languages, age, name)
 
 
