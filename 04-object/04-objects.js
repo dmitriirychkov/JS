@@ -35,9 +35,12 @@ console.log(person.languages)
 // delete person.address
 // console.log(person)
 
-const age = person.age
-const name = person.name
-const languages = person.languages
+// Destructuring
+// const age = person.age
+// const name = person.name
+// const languages = person.languages
+
+const {age, name, languages} = person
 
 console.log(languages, age, name)
 
