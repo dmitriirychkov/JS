@@ -27,7 +27,9 @@ console.log(person['complex key'])
 
 
 person.age++
+person.languages.push('de')
 
-console.log(person.age)
+
+console.log(person.languages)
 
 
