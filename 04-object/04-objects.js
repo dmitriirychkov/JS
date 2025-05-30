@@ -20,16 +20,21 @@ const person = {
     }
 }
 
+/*
 console.log(person.address)
 const addressKey = 'address'
 console.log(person['address'])
 console.log(person['complex key'])
 
-
 person.age++
 person.languages.push('de')
 
-
 console.log(person.languages)
+*/
+
+// person.address = undefined
+delete person.address
+
+console.log(person)
 
 
