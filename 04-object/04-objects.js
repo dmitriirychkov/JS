@@ -75,5 +75,4 @@ const logger = {
     },
 }
 
-logger.keys()
-
+logger.keysAndValues()
