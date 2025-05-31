@@ -1,5 +1,4 @@
 const person = {
-    name: 'Dmitrii',
     age: 37,
     isYoutuber: false,
     languages: ['ru', 'en'],
@@ -42,7 +41,7 @@ console.log(person.languages)
 
 const name = 'Petr'
 
-const {age, name: firstName, languages} = person
+const {age, name: firstName = 'Test', languages} = person
 
 console.log(languages, age, firstName)
 
