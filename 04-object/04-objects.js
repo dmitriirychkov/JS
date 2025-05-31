@@ -63,8 +63,12 @@ Object.keys(person).forEach((key) => {
 */
 
 const logger = {
-    keys() {
-        console.log('Object keys:', Object.keys(this))
+    keys(withText = true) {
+        if (withText) {
+          console.log('Object keys:', Object.keys(this))
+        } else {
+          console.log(Object.keys(this))
+        }
     },
 
     keysAndValues() {
@@ -77,5 +81,5 @@ const logger = {
 
 // const bound = logger.keys.bind(person)
 // bound()
-logger.keys.call(person)
+logger.keys.call(person, false)
 logger.keys.apply(person)
