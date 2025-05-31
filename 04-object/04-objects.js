@@ -56,8 +56,24 @@ for (let key in person) {
 }
 */
 
-const keys = Object.keys(person)
-keys.forEach(key => {
+/*
+Object.keys(person).forEach((key) => {
     console.log(person[key])
 })
+*/
+
+const logger = {
+    keys() {
+        console.log('Object keys:', Object.keys(this))
+    },
+
+    keysAndValues() {
+        Object.keys(this).forEach((key) => {
+        console.log('Key:', key)
+        console.log('Value', this[key])
+      })
+    },
+}
+
+logger.keys()
 
