@@ -79,7 +79,7 @@ const logger = {
     },
 }
 
-// const bound = logger.keys.bind(person)
-// bound()
-logger.keys.call(person, false)
-logger.keys.apply(person, [false])
+const bound = logger.keys.bind(person)
+bound(false)
+// logger.keys.call(person, false)
+// logger.keys.apply(person, [false])
