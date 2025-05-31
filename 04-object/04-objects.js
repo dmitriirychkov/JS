@@ -63,8 +63,8 @@ Object.keys(person).forEach((key) => {
 */
 
 const logger = {
-    keys(obj) {
-        console.log('Object keys:', Object.keys(obj))
+    keys() {
+        console.log('Object keys:', Object.keys(this))
     },
 
     keysAndValues() {
@@ -75,4 +75,5 @@ const logger = {
     },
 }
 
-logger.keys(person)
+const bound = logger.keys.bind({a: 1})
+bound()
