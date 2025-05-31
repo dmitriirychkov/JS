@@ -48,8 +48,7 @@ console.log(languages, age, firstName)
 */
 
 for (let key in person) {
-    console.log(key)
+    // console.log(key)
     console.log(person[key])
 }
-
 
