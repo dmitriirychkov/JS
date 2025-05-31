@@ -47,8 +47,12 @@ const {age, name: firstName = 'Test', languages} = person
 console.log(languages, age, firstName)
 */
 
+console.log([1, 2])
+
+/*
 for (let key in person) {
     // console.log(key)
     console.log(person[key])
 }
+*/
 
