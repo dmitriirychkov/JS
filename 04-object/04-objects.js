@@ -75,5 +75,5 @@ const logger = {
     },
 }
 
-const bound = logger.keys.bind({a: 1})
+const bound = logger.keys.bind({a: 1, b: 42})
 bound()
