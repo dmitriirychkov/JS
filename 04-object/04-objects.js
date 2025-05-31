@@ -57,5 +57,7 @@ for (let key in person) {
 */
 
 const keys = Object.keys(person)
-console.log(keys)
+keys.forEach(key => {
+    console.log(person[key])
+})
 
