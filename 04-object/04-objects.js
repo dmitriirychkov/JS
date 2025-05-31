@@ -47,9 +47,13 @@ const {age, name: firstName = 'Test', languages} = person
 console.log(languages, age, firstName)
 */
 
+/*
 for (let key in person) {
     if (person.hasOwnProperty(key)) {
      console.log(person[key])
     }
 }
+*/
+
+console.dir(Object)
 
