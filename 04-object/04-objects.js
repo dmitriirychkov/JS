@@ -1,4 +1,5 @@
 const person = {
+    name: 'Dmitrii',
     age: 37,
     isYoutuber: false,
     languages: ['ru', 'en'],
@@ -55,5 +56,6 @@ for (let key in person) {
 }
 */
 
-console.dir(Object)
+const keys = Object.keys(person)
+console.log(keys)
 
