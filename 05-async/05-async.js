@@ -24,7 +24,7 @@
 const delay = (time = 1000) => {
   const promise = new Promise((resolve, reject) => {
     setTimeout(() => {
-      resolve()
+      resolve([1, 2, 3])
     }, time)
   })
   return promise
@@ -32,5 +32,5 @@ const delay = (time = 1000) => {
 
 delay(2500)
   .then((data) => {
-     console.log('Timeout')
+     console.log('Timeout', data)
    })
