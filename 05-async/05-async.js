@@ -49,6 +49,7 @@ const delay = (time = 1000) => {
 
  async function asyncExample() {
   try {
+    await delay(3000)
     const data = await getData()
     console.log(data)
   } catch (err) {
