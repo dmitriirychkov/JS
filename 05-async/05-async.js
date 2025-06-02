@@ -47,4 +47,15 @@ const delay = (time = 1000) => {
 
  const getData = () => new Promise((resolve) => resolve([1, 2, 3]))
 
- getData().then((array) => console.log(array))
+ async function asyncExample() {
+  try {
+    const data = await getData()
+    console.log(data)
+  } catch (err) {
+    console.log(err)
+  } finally {
+    console.log('Finally')
+  }
+ }
+
+ asyncExample()
