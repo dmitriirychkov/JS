@@ -15,10 +15,22 @@
 //   console.log('tick', ++count)
 // }, 1000)
 
-function delay(callback, time = 1000) {
-   setTimeout(callback, time)
-}
+// function delay(callback, time = 1000) {
+//   setTimeout(callback, time)
+// }
 
-delay(() => {
-  console.log('timeout')
-}, 2000)
+
+
+const delay = (time = 1000) => {
+  const promise = new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve()
+    }, time)
+  })
+  return promise
+ }
+
+delay(2500)
+  .then((data) => {
+     console.log('Timeout')
+   })
