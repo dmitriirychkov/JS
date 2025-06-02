@@ -24,7 +24,8 @@
 const delay = (time = 1000) => {
   const promise = new Promise((resolve, reject) => {
     setTimeout(() => {
-      resolve([1, 2, 3])
+//      resolve([1, 2, 3])
+      reject('Error in delay')
     }, time)
   })
   return promise
@@ -37,4 +38,7 @@ delay(2500)
    })
    .then((data) => {
      console.log(data)
+   })
+   .catch((err) => {
+     console.log(err)
    })
