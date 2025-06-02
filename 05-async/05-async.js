@@ -42,3 +42,4 @@ delay(2500)
    .catch((err) => {
      console.log(err)
    })
+   .finally(() => console.log('Finally'))
