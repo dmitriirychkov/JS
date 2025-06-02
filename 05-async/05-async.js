@@ -33,4 +33,8 @@ const delay = (time = 1000) => {
 delay(2500)
   .then((data) => {
      console.log('Timeout', data)
+     return data.map((x) => x ** 2)
+   })
+   .then((data) => {
+     console.log(data)
    })
