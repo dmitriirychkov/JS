@@ -12,7 +12,8 @@
 async function start() {
     try {
         const resp = await fetch('https://jsonplaceholder.typicode.com/users')
-        console.log(resp)
+        const data = await resp.json()
+        console.log(data)
     } catch (err) {} 
 }
 
