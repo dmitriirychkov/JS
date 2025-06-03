@@ -20,7 +20,7 @@ async function start() {
 }
 
 function render(users = []) {
-    const html = users.map(toHTML)
+    const html = users.map(toHTML).join('')
     list.innerHTML = html
 }
 
