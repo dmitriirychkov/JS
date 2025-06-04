@@ -12,6 +12,7 @@
 const list = document.querySelector('#list')
 
 async function start() {
+    list.innerHTML = 'Loading ...'
     try {
         const resp = await fetch('https://jsonplaceholder.typicode.com/users')
         const data = await resp.json()
