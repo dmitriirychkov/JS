@@ -37,8 +37,12 @@ async function start() {
 }
 
 function render(users = []) {
-    const html = users.map(toHTML).join('')
-    list.innerHTML = html
+    if (users.length = 0) {
+      list.innerHTML = 'No matched users!'
+    } else {
+      const html = users.map(toHTML).join('')
+      list.innerHTML = html
+    }
 }
 
 function toHTML(user) {
