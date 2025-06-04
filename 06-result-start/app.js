@@ -12,8 +12,8 @@
 const list = document.querySelector('#list')
 const filter = document.querySelector('#filter')
 
-filter.addEventListener('click', () => {
-    console.log('Click')
+filter.addEventListener('input', () => {
+    console.log('input')
 })
 
 async function start() {
