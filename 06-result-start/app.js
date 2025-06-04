@@ -15,7 +15,9 @@ async function start() {
     try {
         const resp = await fetch('https://jsonplaceholder.typicode.com/users')
         const data = await resp.json()
-        render(data)
+        setTimeout(() => {
+            render(data)
+        }, 2000)
     } catch (err) {} 
 }
 
