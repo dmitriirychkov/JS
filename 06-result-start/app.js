@@ -19,7 +19,10 @@ async function start() {
         setTimeout(() => {
             render(data)
         }, 2000)
-    } catch (err) {} 
+    } catch (err) {
+        list.computedStyleMap.color = 'red'
+        list.innerHTML = err.message 
+    } 
 }
 
 function render(users = []) {
