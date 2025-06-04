@@ -10,6 +10,11 @@
 // console.log(parsed)
 
 const list = document.querySelector('#list')
+const filter = document.querySelector('#filter')
+
+filter.addEventListener('click', () => {
+    console.log('Click')
+})
 
 async function start() {
     list.innerHTML = 'Loading ...'
