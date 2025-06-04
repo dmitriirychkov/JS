@@ -14,10 +14,10 @@ const filter = document.querySelector('#filter')
 let USERS = [] 
 
 filter.addEventListener('input', (event) => {
-    const {value} = event.target
-    const filteredUsers = USERS.filter((user) => {
-        return user.name.includes(value) 
-    }) 
+    const value = event.target.value.toLowerCase()
+    const filteredUsers = USERS.filter((user) =>
+    user.name.toLowerCase().includes(value) 
+    ) 
     render(filteredUsers)
 })
 
